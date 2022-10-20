@@ -1,0 +1,32 @@
+.bg-container {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  padding: 3%;
+}
+.heading {
+  font-family: 'Roboto';
+  color: #35469c;
+  text-align: center;
+  font-size: 30px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  order: 1;
+}
+@media screen and (min-width: 768px) {
+  .bg-container {
+    flex-direction: row;
+  }
+  .heading {
+    text-align: start;
+    margin-left: 3%;
+  }
+  .form {
+    width: 50%;
+    order: 0;
+  }
+}
